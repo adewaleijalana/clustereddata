@@ -13,50 +13,21 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+1) clone the project
+2) cd to the root folder of the project
+3) docker-compose up — This will execute Dockerfile commands and will run services defined in the docker-compose file.
+4) access the endpoint on: http://localhost:8989/api/order
+5) sample request:
+ {
+    "dealId": "2",
+    "orderingCurrency": "NGN",
+    "toCurrency": "USD",
+    "orderingTime": "18/12/2020",
+    "amount": 1000
+}
 
-Say what the step will be
+6) docker-compose down — This will stop and remove all containers that were running by docker-compose file.
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Docker](http://docker.com/) - To achieve consistency in deployment environment
 
 ## Author
 
