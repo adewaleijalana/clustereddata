@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: docker
+  application:
+    name: clustereddata-service
+
+
+server:
+  port: 8989
+
+spring.jpa.hibernate.ddl-auto: none
+spring.jpa.open-in-view: true
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+
+---
+spring:
+  profiles: docker
+  datasource:
+    #url: jdbc:sqlserver://172.22.55.25:1514;databaseName=clustereddata
+    url: jdbc:mysql://docker-mysql:3306/clustereddata
+    username: root
+    password: root
