@@ -6,7 +6,10 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Technologies
+* Java 8
+* Maven
+* Docker
 
 What things you need to install the software and how to install them
 
@@ -61,6 +64,6 @@ Add additional notes about how to deploy this on a live system
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Docker](http://docker.com/) - To achieve consistency in deployment environment
 
-## Authors
+## Author
 
 * **Adewale Ijalana** 
