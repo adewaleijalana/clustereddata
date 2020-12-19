@@ -1,6 +1,6 @@
-# Project Title
+# ClusteredData Warehouse
 
-One Paragraph of project description goes here
+ To accept FX deals details from from customer and persist them into DB.
 
 ## Getting Started
 
