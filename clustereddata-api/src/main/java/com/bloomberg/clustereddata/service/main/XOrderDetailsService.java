@@ -1,7 +1,6 @@
 package com.bloomberg.clustereddata.service.main;
 
 
-import com.bloomberg.clustereddata.domain.OrderDetails;
 import com.bloomberg.clustereddata.exception.ModelAlreadyExistException;
 import com.bloomberg.clustereddata.request.OrderRequest;
 import com.bloomberg.clustereddata.response.OrderResponse;
