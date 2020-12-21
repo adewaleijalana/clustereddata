@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.ZonedDateTime;
 
 /**
  * @auther .: adewale.ijalana
@@ -26,7 +27,7 @@ public class OrderDetailsDto implements Serializable{
     private String dealId;
     private String orderingCurrency;
     private String toCurrency;
-    private String orderingTime;
+    private ZonedDateTime orderingTime;
     private BigDecimal amount;
 
 }

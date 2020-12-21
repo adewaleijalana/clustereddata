@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;
+import java.util.Date;
 
 /**
  * @auther .: adewale.ijalana
@@ -20,8 +21,8 @@ import java.time.ZonedDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name="order_details")
+@Entity(name = "fx_order_details")
+@Table(name = "fx_order_details")
 @EqualsAndHashCode(callSuper = false)
 public class OrderDetails extends AbstractBaseEntity implements java.io.Serializable{
 
@@ -33,6 +34,9 @@ public class OrderDetails extends AbstractBaseEntity implements java.io.Serializ
 
     @Column(name="to_currency", nullable=false)
     private String toCurrency;
+
+    @Column(name="order_time", nullable=false)
+    private Date orderTime;
 
     @Column(name="amount", nullable=false)
     private BigDecimal amount;

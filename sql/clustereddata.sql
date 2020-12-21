@@ -5,7 +5,7 @@ CREATE TABLE `fx_order_details`(
   `deal_id` varchar(45) NOT NULL,
   `ordering_currency` varchar(45) NOT NULL,
   `to_currency` varchar(45) DEFAULT NULL,
-  `order_time` TIMESTAMP DEFAULT NULL,
+  `order_time` date DEFAULT NULL,
   `amount` DECIMAL(18, 2) DEFAULT NULL,
   `version` bigint NULL,
   PRIMARY KEY (`id`)

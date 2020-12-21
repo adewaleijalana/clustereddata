@@ -1,5 +1,6 @@
 package com.bloomberg.clustereddata.request;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,6 +10,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.ZonedDateTime;
+import java.util.Date;
 
 /**
  * @auther .: adewale.ijalana
@@ -34,7 +37,9 @@ public class OrderRequest implements Serializable {
     private String toCurrency;
 
     @NotEmpty
-    private String orderingTime;
+    @JsonFormat(
+            shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+    private Date orderingTime;
 
     @NotNull
     private BigDecimal amount;

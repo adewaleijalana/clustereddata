@@ -53,6 +53,12 @@ public class OrderDetailsServiceImpl extends AbstractServiceImpl<OrderDetails, S
 		public OrderDetailsDto entity2DTO(OrderDetails entity) {
 
 			OrderDetailsDto dto = OrderDetailsDto.builder()
+					.id(entity.getId())
+					.dealId(entity.getDealId())
+					.orderingCurrency(entity.getOrderingCurrency())
+					.toCurrency(entity.getToCurrency())
+					.orderingTime(entity.getOrderTime())
+					.amount(entity.getAmount())
 				.build();
 			return dto;
 

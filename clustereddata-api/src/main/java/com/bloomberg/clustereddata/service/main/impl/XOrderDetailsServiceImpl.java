@@ -9,6 +9,7 @@ import com.bloomberg.clustereddata.service.main.XOrderDetailsService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.Optional;
 
 /**
@@ -38,6 +39,7 @@ public class XOrderDetailsServiceImpl implements XOrderDetailsService {
                 .dealId(orderRequest.getDealId())
                 .orderingCurrency(orderRequest.getOrderingCurrency())
                 .toCurrency(orderRequest.getToCurrency())
+                .orderTime(new Date())
                 .amount(orderRequest.getAmount())
                 .build();
 
